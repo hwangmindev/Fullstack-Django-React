@@ -25,9 +25,6 @@ export default function AuthNavItems({
 
   return (
     <>
-      <Link href="/" className={linkClassName}>
-        Home
-      </Link>
       {!isLoggedIn && (
         <>
           <Link href="/login" className={linkClassName}>
@@ -39,17 +36,19 @@ export default function AuthNavItems({
         </>
       )}
       {isLoggedIn && (
-        <button
-          type="button"
-          onClick={handleLogout}
-          className={logoutButtonClassName}
-        >
-          Logout
-        </button>
+        <>
+          <button
+            type="button"
+            onClick={handleLogout}
+            className={logoutButtonClassName}
+          >
+            Logout
+          </button>
+          <Link href="/profile" className={linkClassName}>
+            Profile
+          </Link>
+        </>
       )}
-      <Link href="/profile" className={linkClassName}>
-        Profile
-      </Link>
     </>
   );
 }

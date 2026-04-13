@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useCallback, useLayoutEffect, useState } from "react";
-import { AUTH_TOKEN_STORAGE_KEY } from "@/lib/api/auth";
+import { AUTH_TOKEN_STORAGE_KEY } from "@/lib/constants/auth";
 
 function readLoggedIn() {
   return !!localStorage.getItem(AUTH_TOKEN_STORAGE_KEY);

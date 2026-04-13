@@ -4,8 +4,7 @@ import AuthNavItems from "@/components/AuthNavItems";
 const navLinkClass =
   "rounded-md px-2.5 py-1.5 text-sm font-medium text-foreground/80 transition-colors hover:bg-zinc-100 hover:text-foreground dark:hover:bg-zinc-900";
 
-const logoutClass =
-  `${navLinkClass} inline-flex cursor-pointer items-center border-0 bg-transparent font-inherit`;
+const logoutClass = `${navLinkClass} inline-flex cursor-pointer items-center border-0 bg-transparent font-inherit`;
 
 export default function Navbar() {
   return (
@@ -13,7 +12,7 @@ export default function Navbar() {
       <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
         <Link
           href="/"
-          className="shrink-0 text-lg font-semibold tracking-tight text-foreground transition-colors hover:text-primary"
+          className="shrink-0 text-2xl font-semibold tracking-tight text-primary transition-colors"
         >
           Full-Stack App
         </Link>
