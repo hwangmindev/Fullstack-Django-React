@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { login } from "@/lib/api/auth";
 import Link from "next/link";
-import ErrorNotification from "./components/ErrorNotification";
+import ErrorNotification from "./_components/ErrorNotification";
 import type { LoginPayload } from "@/lib/types/auth";
 
 export default function LoginPage() {

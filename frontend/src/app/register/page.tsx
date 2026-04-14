@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { register } from "@/lib/api/auth";
-import ErrorNotification from "./components/ErrorNotificaton";
+import ErrorNotification from "./_components/ErrorNotificaton";
 import type { RegisterPayload } from "@/lib/types/auth";
 
 export default function RegisterPage() {
